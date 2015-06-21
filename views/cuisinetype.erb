@@ -1,0 +1,14 @@
+<style>
+body {
+	text-align: left;
+	font-family: Oswald;
+}
+</style>
+<body>
+<h1><%= @cuisine %></h1>
+<ul>
+	<% @restaurant.each do |restaurant| %>
+		<li><a href="/restaurant/<%= restaurant %>"><%= restaurant %></a></li>
+	<% end %>
+</ul>
+</body>

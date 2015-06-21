@@ -1,0 +1,13 @@
+<style>
+body {
+	text-align: left;
+	font-family: Oswald;
+}
+</style>
+<body>
+<ul>
+<% @cuisine_types.each do |cuisine| %>
+	<li><a href="/cuisinetypes/<%= cuisine %>"><%= cuisine %></a></li>
+	<% end %>
+</ul>
+</body>
